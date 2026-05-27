@@ -1,253 +1,232 @@
-Capstone Step 2 – Project Proposal
-Project Title:
+Capstone Project Proposal
+Gym & Fitness Education App
+Project Overview
 
-DevTrack – Learning & Project Management Platform for Beginner Developers
+The Gym & Fitness Education App is designed to help users improve their fitness by providing workout plans, exercise tutorials, nutrition guidance, and progress tracking tools. The application will support users in achieving fitness goals such as weight loss, muscle gain, strength improvement, and healthier lifestyles.
+
+The goal is to create a platform that makes fitness education and workout planning accessible through mobile and web applications.
 
 1. Tech Stack
-
-Frontend
-
-React (Vite)
-CSS / Tailwind CSS
-React Router
-Axios
-
+Frontend (Mobile & Web)
+React Native
+Cross-platform mobile app development (iOS & Android)
+React.js
+Web application development
+Responsive and interactive UI
 Backend
-
-Node.js
-Express.js
-
-Database
-
-MongoDB with Mongoose
-
+Node.js + Express.js
+REST API development
 Authentication
-
-JWT (JSON Web Tokens)
-bcrypt for password hashing
-
-Deployment
-
-Frontend: Vercel
-Backend: Render
+Server-side logic
+Database
+MongoDB
+Store workouts, nutrition plans, user data, and progress tracking
+Hosting / Deployment
+Backend: Render / Heroku
+Frontend: Vercel / Netlify
 Database: MongoDB Atlas
+2. Project Focus
 
-Version Control
-
-Git + GitHub
-2. Focus of Project
-
-This will be an evenly focused full-stack application.
+This project will be an evenly focused full-stack application.
 
 Frontend focus:
 
-User-friendly dashboard
-Responsive design
-Progress visualization
+User-friendly fitness dashboard
+Workout tracking UI
+Exercise browsing
+Progress charts
 
 Backend focus:
 
-Authentication
-Database management
-API creation
-User data storage
+User accounts
+Workout storage
+Progress tracking
+APIs and database management
 3. Project Type
 
-This project will be a:
+The project will include:
 
-✓ Website (responsive desktop + mobile)
+Mobile App
 
-Future stretch goal:
+Available on:
 
-✓ Mobile app using React Native
+Android
+iOS
 
-4. Goal of Project
+Built using React Native.
 
-The goal is to help beginner programmers organize:
+Website
 
-Learning progress
-Coding projects
-Notes
-Tasks
-Deadlines
-Resources
+Accessible through browsers for users who prefer desktop access.
 
-Users can create accounts and monitor their growth over time.
+4. Project Goal
 
-5. User Demographic
+The main goal is:
 
-Target users:
+Help users achieve fitness goals through workout plans, exercise education, and progress monitoring.
 
-Beginner developers
-Coding bootcamp students
-Computer science students
-Self-taught programmers
+Additional goals:
 
-Age group:
+Encourage healthy habits
+Provide exercise guidance
+Track fitness progress
+Support beginners and experienced gym users
+5. Target Users (Demographic)
 
-16–35 years old
+Primary users include:
 
-6. Data & API Plan
+Beginners
 
-Data stored:
+Users starting fitness journeys.
 
-Users:
+Gym Members
 
-Name
-Email
-Password (hashed)
+People looking for workout routines and progress tracking.
 
-Projects:
+Athletes & Fitness Enthusiasts
 
-Title
-Description
-Status
-Deadline
+Users focused on strength training, bodybuilding, or performance improvement.
 
-Tasks:
+Personal Trainers
 
-Completion state
-Priority
-Due date
+Professionals wanting to manage or share workout plans.
 
-Resources:
+6. Data and API Plan
 
-URLs
-Notes
+The application may use:
 
-Data collection:
+Workout Data
 
-User-generated data through forms.
+Examples:
 
-Potential external APIs:
+Exercise names
+Sets
+Reps
+Difficulty level
+Muscle groups
+Nutrition Data
 
-GitHub API
-Coding challenge APIs
-Project Breakdown
+Examples:
+
+Calories
+Protein
+Meal suggestions
+Progress Data
+
+Examples:
+
+Weight changes
+Workout history
+Fitness goals
+Data Collection
+
+Data may come from:
+
+Custom-built APIs
+Fitness APIs
+User-generated workout records
+Project Development Approach
 Database Schema
-Users Collection
+Users
 User
-_id
-name
-email
-password
-createdAt
-Projects Collection
-Project
-_id
-userId
-title
-description
-status
-deadline
-Tasks Collection
-Task
-_id
-projectId
-title
-completed
-priority
+-id
+-name
+-email
+-password
+-age
+-weight
+-fitnessGoal
+-createdAt
+Workouts
+Workout
+-id
+-exerciseName
+-muscleGroup
+-sets
+-reps
+-duration
+-difficulty
+Progress Tracking
+Progress
+-id
+-userId
+-weight
+-workoutCompleted
+-date
+Potential API Challenges
 
-Relationships:
+Possible issues:
 
-One User → Many Projects
+Large Data Handling
 
-One Project → Many Tasks
+Workout libraries can become large.
 
-Potential API Issues
+Real-Time Updates
 
-Possible challenges:
+Progress tracking requires accurate updates.
 
-Authentication errors
-Expired JWT tokens
-Slow API responses
-Invalid data submissions
-MongoDB connection problems
+Data Accuracy
 
-Solutions:
+Exercise information must remain reliable.
 
-Validation
-Error handling
-Loading states
-Retry mechanisms
-Sensitive Information
+Security Considerations
 
-Need to secure:
+Sensitive data may include:
 
-Passwords
+User accounts
 Emails
-Authentication tokens
+Passwords
+Fitness progress records
 
-Security methods:
+Security measures:
 
-bcrypt hashing
-JWT auth
-Environment variables (.env)
-HTTPS
-Functionality
+JWT authentication
+Password hashing
+Environment variables
+HTTPS encryption
+Planned Features
+Must Have Features
 
-Must-have features:
-
-✓ Register account
-
-✓ Login/logout
-
-✓ Create projects
-
-✓ Add tasks
-
-✓ Edit/delete tasks
-
-✓ Track progress
-
-✓ Dashboard
-
-✓ Search functionality
-
-✓ Responsive UI
+✔ User registration/login
+✔ Workout plans
+✔ Exercise search
+✔ Progress tracking
+✔ Nutrition guidance
+✔ Mobile responsive design
 
 User Flow
 
-Typical user journey:
+Typical journey:
 
-Homepage
+Step 1
 
-↓
-
-Create Account
+User creates account
 
 ↓
 
-Login
+Step 2
+
+Select fitness goal
+
+Examples:
+
+Weight loss
+Muscle gain
+Strength
 
 ↓
 
-Dashboard
+Step 3
+
+Receive workout recommendations
+
+↓
+Step 4
+
+Track workouts and progress
 
 ↓
 
-Create Project
+Step 5
 
-↓
-
-Add Tasks
-
-↓
-
-Track Progress
-
-↓
-
-Edit/Delete Tasks
-
-Features Beyond CRUD
-
-Additional features:
-
-Progress charts
-Learning streak tracking
-Notifications
-Dark mode
-GitHub integration
-
-These make the project more advanced than standard CRUD operations.
+View improvement reports
